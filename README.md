@@ -1,6 +1,7 @@
 # quarkus with kotlin and vertx
 
-https://github.com/quarkusio/quarkus/issues/5799
+
+https://github.com/quarkusio/quarkus/issues/5799  Closed!
 
 Why init and @PostConstruct don't work?
 
