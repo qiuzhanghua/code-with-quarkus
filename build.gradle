@@ -12,7 +12,25 @@ plugins {
     id "org.jetbrains.kotlin.plugin.allopen" version "1.3.61"
 }
 
+apply plugin: 'eclipse'
+apply plugin: 'idea'
 apply plugin: 'io.quarkus'
+
+// gradle cleanEclipse eclipse
+// gradle cleanIdea idea
+// https://stackoverflow.com/questions/39975780/how-can-i-use-gradle-to-download-dependencies-and-their-source-files-and-place-t/39981143#39981143
+
+eclipse {
+    classpath {
+        downloadSources = true
+    }
+}
+idea {
+    module {
+//        downloadJavadoc = true
+        downloadSources = true
+    }
+}
 
 repositories {
      mavenLocal()
