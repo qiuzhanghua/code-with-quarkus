@@ -1,15 +1,9 @@
 package com.example
 
 import io.vertx.core.Vertx
-import javax.annotation.PostConstruct
-import javax.ejb.Startup
 import javax.enterprise.context.ApplicationScoped
-import javax.enterprise.context.Destroyed
-import javax.enterprise.context.Initialized
-import javax.enterprise.event.Observes
 import javax.enterprise.inject.Default
 import javax.inject.Inject
-import javax.inject.Singleton
 
 //@Singleton
 //@Startup
